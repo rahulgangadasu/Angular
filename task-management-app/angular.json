@@ -26,7 +26,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.css", "src/app/header.css"]
+            "styles": ["src/styles.css", "src/app/header/header.css"]
           },
           "configurations": {
             "production": {
