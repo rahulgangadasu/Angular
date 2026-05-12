@@ -1,1 +1,8 @@
-<p>user works!</p>
+<div>
+  <button (click)="onUserClick()">
+    <img [src]="selectedUserImage" [alt]="selectedUser.name" />
+    <!-- property binding, sets the image source and alt text based on the selected user's avatar and name -->
+    <span>{{ selectedUser.name }}</span>
+    <!-- string interpolation, displays the user's name -->
+  </button>
+</div>

@@ -1,9 +1,22 @@
 import { Component } from '@angular/core';
+import { DUMMY_USERS } from '../dummy-users';
 
+const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 @Component({
   selector: 'app-user',
   imports: [],
   templateUrl: './user.html',
   styleUrl: './user.css',
 })
-export class User {}
+export class User {
+  selectedUser = DUMMY_USERS[randomIndex];
+
+  get selectedUserImage() {
+    return '/assets/users/' + this.selectedUser.avatar;
+  }
+
+  onUserClick() {
+    const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+    this.selectedUser = DUMMY_USERS[randomIndex];
+  }
+}
