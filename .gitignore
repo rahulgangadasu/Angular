@@ -2,7 +2,7 @@ Docs/
 
 task-management-app/.vscode/
 task-management-app/node_modules/
-task-management-app/public/
+task-management-app/public/favicon.ico
 task-management-app/.editorconfig
 task-management-app/.prettierrc
 task-management-app/package-lock.json
